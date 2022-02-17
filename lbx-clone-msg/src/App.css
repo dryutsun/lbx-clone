@@ -3,12 +3,16 @@
 
 
 * {
-  outline: grey dotted 1px;
+  /* outline: grey dotted 1px; */
   font-family: Rubik;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #14181C;
+  display: flex;
 
 }
 
@@ -85,6 +89,7 @@ body {
 #nav-items {
   margin: 0px 10px;
 }
+
 #logo-icon {
   color: white;
   display: flex;
@@ -98,4 +103,26 @@ body {
 #logo {
   font-family: inherit;
   margin: 5px;
+}
+
+#hero-image {
+  position: absolute;
+  top: 0px;
+  z-index: -1000;
+  width: 80vw;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;  
+  
+
+}
+
+img#hero {
+  top: 0px;
+  object-fit:cover;
+  width: 100%;
+  height: 50vw;
+  padding: 0px;
+  max-width: 100%;
 }

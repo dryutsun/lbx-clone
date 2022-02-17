@@ -10,8 +10,8 @@ import { useState, useEffect } from "react";
 function App() {
   // const [user, setUser] = useState("");
   // setUser("Goro");
-  const user = "Goro"
-  // const user = null
+  // const user = "Goro"
+  const user = null
   return (
     <>
       <div className="App">

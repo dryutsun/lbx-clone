@@ -39,7 +39,7 @@ const NavBar = ({ user }) => (
 
           <ul id="navbar-list">
           {user && (
-					<span className='navbar-text mr-2'>Welcome, {user.email}</span>
+					<span className='navbar-text mr-2'>Welcome, {user}</span>
 				)}
             {alwaysOptions}
             {user ? authenticatedOptions : unAuthenticatedOptions}
@@ -51,4 +51,8 @@ const NavBar = ({ user }) => (
 
 // Notes: This Logo-Icon Can be Turned into a Component
 // This Navbar Needs to be Conditional based Upon Aunthentication Route
+// Considerations: 
+// - Should we have a toggle to expose a form?
+// - Should we have a modal to expose a form?
+// - Should we navigate to a login page?
 export default NavBar;
